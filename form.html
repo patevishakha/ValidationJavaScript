@@ -1,0 +1,114 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <style>
+        
+            #heading
+            {
+                text-align: center;
+                color: rgb(8, 12, 68);
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            #div1
+            {
+                background-color: rgb(118, 214, 214);
+                border: 5px solid white;
+                padding: 2em;
+                text-align: center;
+            
+            }
+            #mybody
+            {
+                background-image: url("pic4.jpeg");
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            #btn
+            {
+                background-color:slateblue;
+                text-align: center;
+                border: 2px solid black;
+                font-weight: bold;
+                padding: 5px,10px,5px,10px;
+                
+            }
+            .showerror
+            {
+                color: rgb(172, 14, 14);
+                font-weight: bold;
+            }
+            .ourlabel
+            {
+                font-weight: bold;
+            }
+
+        </style>
+
+        <script src="jsvalidation.js" type="text/javascript">
+
+        </script>
+
+    </head>
+    <body  id="mybody">
+        
+        <div class="container">
+            <div class="col-lg-7 m-auto d-block" id="div1">
+
+                <form onsubmit="return validate()" action="validation1.html" name="myform" id="form1">
+                    <h2><header id="heading">Registration Form</header></h2>
+                    <hr>
+                    <div class="div2">
+
+                    <label class="ourlabel" for="u_name">Enter Name : </label><br>
+                    <input type="text" name="u_name" id="uname" placeholder="viraj sharma"  class="form-control">
+                    <span class="showerror" id="sp1"></span>
+                    <br>
+                
+                    <label for="u_pass" class="ourlabel">Enter Password : </label><br>
+                    <input type="password" name="u_pass" id="upass" placeholder="a@AA****" class="form-control">
+                    <span class="showerror" id="sp2"></span>
+                    <br>
+
+                    <label for="c_pass" class="ourlabel">Confirm Password : </label><br>
+                    <input type="password" name="c_pass" id="cpass" placeholder="a@AA****"  class="form-control">
+                    <span class="showerror" id="sp3"></span>
+                    <br>
+
+                    <label for="u_mobile" class="ourlabel">Enter Mobile No : </label><br>
+                    <input type="text" name="u_mobile" id="umobile" placeholder="7589******" class="form-control">
+                    <span class="showerror" id="sp4"></span>
+                    <br>
+
+                    <label for="u_email" class="ourlabel">Enter Emial Id : </label><br>
+                    <input type="email" name="u_email" id="uemail" placeholder="tan@teluno.com" class="form-control">
+                    <span class="showerror" id="sp5"></span>
+                    <br>    
+                    
+                    <button id="btn" type="submit" value="Submit">Submit</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </body>
+</html>
